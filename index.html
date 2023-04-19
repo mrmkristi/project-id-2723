@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Invoices</title>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <h3>Invoices</h3>
+        </div>
+        <div class="button-group">
+            <button class="btn-light">
+                <i class="fa-solid fa-arrow-up"></i>
+                Export
+            </button>
+            <button class="btn-new">
+                <i class="fa-regular fa-plus fa-sm"></i>
+                New
+            </button>
+            <button class="btn-more">
+                <i class="fa-solid fa-filter"></i>
+            </button>
+            <button class="btn-more">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+    </div>
+    <div class="body">
+        <div class="invoices">
+            <div class="pagination">
+                <div class="dropdown-entries">
+                    <div class="label">Results per page</div>
+                    <div class="field">
+                        <p class="p2">20</p>
+                        <button class="btn-sort">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav">
+                    <button class="btn-prev">
+                        <i class="fa-solid fa-chevron-left fa-2xs"></i>
+                    </button>
+                    <div class="page">1</div>
+                    <button class="btn-next">
+                        <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    </button>
+                </div>
+                <div class="dropdown-page">
+                    <div class="label">Page</div>
+                    <div class="field">
+                        <p class="p2">20</p>
+                        <button class="btn-sort">
+                            <i class="fa-solid fa-sort-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="indeterminate" name="checkbox" checked />
+                                <label class="fa" for="indeterminate"></label>
+                            </th>
+                            <th>
+                                <p>Type</p>
+                            </th>
+                            <th>
+                                <p>Date</p>
+                            </th>
+                            <th>
+                                <p>Customer</p>
+                            </th>
+                            <th>
+                                <p>Location</p>
+                            </th>
+                            <th>
+                                <p>State</p>
+                            </th>
+                            <th>
+                                <p>Total</p>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Lydia Dias</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="primary">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    In progress
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                                <label class="danger">Due 2 days ago</label>
+                            </td>
+                            <td>
+                                <p class="p2">Livia Siphron</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Pending
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">4147.20 €</p>
+                                <label class="danger">Unpaid 200.29 €</label>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Invoice-Waybill</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Tatiana George</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="success">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Success
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                            <td>
+                                <p class="p2">Invoice-Waybill</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Dulce Lipshutz</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Complete
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Prepayment inv.</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Paityn Philips</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="primary">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    In progress
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                <input type="checkbox" name="checkbox" checked />
+                            </td>
+                            <td>
+                                <p class="p2">Prepayment inv.</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Jordyn Mango</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Pending
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                                <label class="danger">Due 2 days ago</label>
+                            </td>
+                            <td>
+                                <p class="p2">Paityn Workman</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="success">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Success
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                                <label class="danger">Due 2 days ago</label>
+                            </td>
+                            <td>
+                                <p class="p2">Davis Dorwart</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Complete
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Craig Workman</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Complete
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="checkbox" />
+                            </td>
+                            <td>
+                                <p class="p2">Receipt</p>
+                                <p class="p4">#100048</p>
+                            </td>
+                            <td>
+                                <p class="p2">21.10.2022</p>
+                            </td>
+                            <td>
+                                <p class="p2">Alfredo George</p>
+                            </td>
+                            <td>
+                                <p class="p2">Location #12</p>
+                            </td>
+                            <td>
+                                <label class="secondary-black">
+                                    <i class="fa-solid fa-circle fa-2xs"></i>
+                                    Complete
+                                </label>
+                            </td>
+                            <td>
+                                <p class="p2">129.00 €</p>
+                            </td>
+                            <td>
+                                <p class="p5">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="customers-panel">
+            <div class="title">
+                <h3>Customers</h3>
+                <button class="btn-light">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Add
+                </button>
+            </div>
+            <div class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <form class="search-field">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="text" />
+                </div>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+            <ul class="customers-list">
+                <li>Marathon Oil Corp.</li>
+                <li>Sealed Air</li>
+                <li>Southern Company</li>
+                <li>Atmos Energy</li>
+                <li>Equifax Inc.</li>
+                <li>Kansas City Southern</li>
+                <li>Fidelity National Information Services</li>
+                <li>Colgate-Palmolive</li>
+                <li>Air Products & Chemicals Inc.</li>
+                <li>Intuitive Surgical Inc.</li>
+                <li>Quest Diagnostics</li>
+                <li>Crown Castle International Corp.</li>
+                <li>News Corp. Class A</li>
+                <li>Federal Realty Investment Trust</li>
+                <li>Humana Inc.</li>
+            </ul>
+            <div class="well">
+                <div class="well-title">
+                    <h3>Add customers</h3>
+                    <button class="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="well-content">
+                    <p class="p2">You can add customers by pressing the Add + button in the corner or by importing your clients from a CSV file</p>
+                    <button class="btn-import">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        Import customers
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
